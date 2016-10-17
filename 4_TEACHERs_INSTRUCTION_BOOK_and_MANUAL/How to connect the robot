@@ -1,0 +1,23 @@
+In order to run the robot in Windows  you need:
+
+>> To install latest version of Arduino IDE and to connect the Arduino board.
+
+>> To upload the latest version of FirmataPlus to the Arduino board. You will find the zip file in https://github.com/MrYsLab/PyMata/tree/master/ArduinoSketch. Unzip the file and copy the content of the libraries folder to libraries in your Arduino folder. Then select FIrmataPlus form examples and upload to the Arduino board of the robot. !Please note that the version of the Pymata and the version of the Firmata plus should be compatible otherwise you can experience problems such as  not functional sensor and others. 
+
+>>To install Scratch 2.0 https://scratch.mit.edu/scratch2download/ or to use web version of snap https://snap.berkeley.edu/
+
+>>To install python 2.7 from https://www.python.org/downloads/ . Please note that in some cases python directory is not registered in the environment variables and is not recognized as valid command outside of its directory. In that case you need to include (add) “;c:\python27;c:\python27\scripts” to the PATH line. Just write Environment variables in “search programs and files”. Open the environment variables screen and push the environment variables button. Then add “;c :\python27;c:\python27\scripts” to the end of the PATH line.
+
+>>As soon as you have python you need PyMata and PySerial. Usually PySerial is included in the python so you need to add only PyMata The easiest way to add it is to type: “python -m pip install PyMata” in command prompt and press Enter.
+
+>>To download s2a_fm https://github.com/MrYsLab/s2a_fm> and unzip the content  in a directory s2a_fm under C: drive.
+
+>>Then open a command prompt go to the s2a_fm directory type: s2a_fm.py comN. Alternately you can use the automatic java tool to connect the robot: 
+
+>>“N” is the number of the com port of the Bluetooth module – see the GUIDE: 10_CONNECT_s2a_fm screenshot as a 
+reference how the successful connection between the robot and the computer looks.
+
+>>Then simply run SCRATCH or SNAP to command the robot. You will find the demo program demo program 
+ESI CEE_tank_with_sonar_4.sb2we used during the workshop in the shared folder. You can develop other programs and add 
+more sensors, drivers and other hardware if you want. Please, share other versions of the program.
+
